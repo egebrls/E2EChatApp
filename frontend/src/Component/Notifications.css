@@ -1,0 +1,124 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color:transparent;
+    /* color: white; */
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    justify-content: flex-start; /* Düğmeyi sola hizala */
+    text-align: left; /* Düğmeyi sola hizala */
+    border-radius: 30%;
+    color: gold;
+    font-size: 30px;
+  }
+
+  .animated-button {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  
+  @keyframes ring {
+    0% {
+      transform: rotate(-10deg) scale(1);
+    }
+    50% {
+      transform: rotate(10deg) scale(1.1);
+    }
+    100% {
+      transform: rotate(-10deg) scale(1);
+    }
+  }
+  
+  @-webkit-keyframes ring {
+    0% {
+      -webkit-transform: rotate(-10deg) scale(1);
+    }
+    50% {
+      -webkit-transform: rotate(10deg) scale(1.1);
+    }
+    100% {
+      -webkit-transform: rotate(-10deg) scale(1);
+    }
+  }
+  
+  
+  .animated-button .dropbtn {
+    animation: ring 0.5s ease-in-out infinite; /* Adjust duration and timing as needed */
+    -webkit-animation: ring 0.5s ease-in-out infinite; /* For compatibility with older browsers */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px -8px 16px 0px rgba(0,0,0,0.2); /* Yukarı doğru gölge */
+    z-index: 1;
+    top: 110%; /* Düğmenin üstüne gelecek şekilde */
+    left: -255%;
+    max-height:fit-content;
+    overflow-y: scroll;
+    overflow: hidden;
+  }
+  
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+  }
+
+  .dropdown-content span {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #a8a8a8a9;
+  }
+  
+  .dropdown.active .dropdown-content {
+    display: block;
+    min-height: fit-content;
+    max-height: 200px;
+    width: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  
+  .notification-content {
+    display: flex;
+    justify-content: space-between; /* or 'flex-start' if you want them to be aligned to the left */
+}
+
+
+.close-notifi{
+  right: 0;
+  top: 0;
+  font-size: 20px;
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  display: inline-block;
+  border: none;
+  font-size: medium;
+
+}
+
+.close-notifi:hover{
+  color: #cf0f0fbd;
+}

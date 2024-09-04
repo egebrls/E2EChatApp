@@ -1,0 +1,143 @@
+.messagecon1 {
+    min-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.messagecon2 {
+    background-color: transparent;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: larger;
+}
+
+.messagecon3 {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+.messagecon4 {
+    color: #1a202c;
+    font-weight: bold;
+    max-width: fit-content;
+}
+
+.messages1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex: 1;
+    overflow: auto;
+}
+
+.receivedmessage1 {
+    width: fit-content;
+    max-width: 600px;
+    padding: 12px;
+    border-radius: 12px;
+    color: #1b1919;
+    background-color: whitesmoke;
+    text-align: start;
+    margin-bottom: 8px; /* konusma balonları arasındaki mesafe*/
+    white-space: pre-wrap; /* İçeriğin alt satıra geçmesini sağlar */
+    word-break: break-word;
+}
+
+.receivedmessagetime {
+    opacity: 0.5;
+    font-size: 12px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.messagesend1 {
+    width: fit-content;
+    max-width: 600px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    color: #1b1919;
+    background-color: rgba(54, 160, 199, 0.534);
+    text-align: left;
+    margin-bottom: 8px;
+    margin-left: auto;
+    white-space: pre-wrap; /* İçeriğin alt satıra geçmesini sağlar */
+    word-break: break-word;
+}
+
+.messagesendtime {
+    opacity: 0.5;
+    font-size: 12px;
+    gap: 4px;
+    align-items: center;
+    text-align: right;
+}
+
+.messageinput1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.messageinput2 {
+    position: relative;
+    width: 100%;
+}
+
+.messageinput3 {
+    border: 1px solid;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    display: block;
+    width: 100%;
+    padding: 0.625rem;
+    background: transparent;
+    border-color: #718096;
+    color: #1b1919;
+}
+
+.messageinput4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 0.75rem;
+    background: transparent;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.nochatscreen {
+    color: #333;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.nochatscreen-icon {
+    color: #333;
+    font-size: 80px;
+}
+.notif {
+    background-color: rgb(211, 211, 171);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.chat-image {
+    max-width: 100%;
+    max-height: 100%;    
+   }
+   
+   .chat-audio,
+   .chat-video {
+     max-width: 100%;
+   }

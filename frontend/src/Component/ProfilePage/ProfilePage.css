@@ -1,0 +1,96 @@
+.ui-w-80 {
+    position: absolute; 
+    width : 190px;
+    height: 190px;
+    bottom: 5px;
+    left: 2px;
+    border-radius: 50%;
+    border: 2px solid rgb(26, 19, 87);
+}
+
+.block {
+    position: relative;
+    margin:  5% auto 0;
+    width: 50%;
+    height: 200px;
+} 
+
+.button {
+    width: 4px;
+}
+
+.wrap {
+    display: flex;
+}
+
+.left-side {
+    flex: 1; /* Sol tarafın genişliği */
+    padding-left: 70px;
+    
+}
+
+.right-side {
+    flex: 1; /* Sağ tarafın genişliği */
+
+}
+
+.left-side p {
+    text-align: left;
+}
+
+.right-side p{
+    text-align: left;
+}
+
+.labels {
+    font-size: x-large;
+    line-height: 45px;
+}
+
+.data {
+    text-decoration: none;
+    color: blanchedalmond;
+    color: #fff;
+    font-size: x-large;
+    line-height: 45px;
+}
+
+
+.labels:hover {
+    /* background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); */
+    background-image: linear-gradient(to left, violet,  red);
+    background-clip: text;
+    color: transparent; 
+}
+
+
+.glow::before , .glow::after {
+    display: flex;
+    content: '';
+    position: absolute;
+    left: -4px;
+    right: -2px;
+    top: -2px;
+    background: linear-gradient(45deg,violet, indigo, blue, green, yellow, orange, red);
+    background-size: 400%;
+    width: 202px;
+    height: calc(99% + 5px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes animate {
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 400% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}

@@ -1,0 +1,127 @@
+.bordertest {
+    /* border-right: 2px solid; */
+    border-color: gray;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.group-chat-width-fix {
+  width: 300px;
+  border-right: 2px solid gray;
+}
+
+.input-box2 {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 5px rgba(54, 160, 199, 0.534);
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  .input-box2:focus {
+    outline: none;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+
+  .buton2 {
+    position: fixed;
+    bottom: 11px;
+    left: 100px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(54, 160, 199, 0.534);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buton2:hover {
+    background-color: rgba(54, 160, 199, 0.997);
+  }
+/*   
+  .profile-border {
+    border-left: 2px solid gray;
+    min-width: 250px;
+    max-width: 250px;
+  } */
+
+  .profile-border {
+  border-left: 2px solid gray;
+  min-width: 250px;
+  max-width: 250px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow:scroll;
+  overflow-x: hidden;
+}
+
+.groupprof1 {
+  font-size:1.5em;
+  font-weight: bold;
+  color: rgb(55, 53, 31);
+}
+
+.groupprof2 {
+  text-align: center;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.groupprof3 {
+  width: 200px;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.add-button {
+    bottom: 11px;
+    left: 100px;
+    padding: 10px 20px;
+    /* margin-top: 7px; */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px 0;
+}
+
+.remove-button {
+    bottom: 11px;
+    left: 100px;
+    padding: 10px 20px;
+    /* margin-top: 7px; */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: darkred;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+
+
